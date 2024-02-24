@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:wght@500&family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+  --font-400: "Poppins", sans-serif;
+  --font-500: "Nunito", sans-serif;
+  --font-700: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: auto;
+  height: 100vh;
+  
+  background-image: -webkit-linear-gradient(#dd5da7, #de5da7);
+}
+
+/* Styling for "wrapper-reminder" and "wrapper-add-user" */
+.wrapper-reminder,
+.wrapper-add-user {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  background-color: white;
+  border-radius: 1rem;
+  
+  box-shadow: 10px 8px 14px 0px rgba(0,0,0,0.84);
+  -webkit-box-shadow: 10px 8px 14px 0px rgba(0,0,0,0.84);
+  -moz-box-shadow: 10px 8px 14px 0px rgba(0,0,0,0.84);
+
+  /* Styling for "clear-btn" */
+  .clear-btn {
+    align-self: center;
+
+    width: 75%;
+    height: 2.5rem;
+
+    font-size: 1rem;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #dd5ea5;
+    color: white;
+
+    transition: all 0.5s;
+  }
+
+  .clear-btn:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* Styling for "wrapper-reminder" */
+.wrapper-reminder {
+  width: 30rem;
+  height: fit-content;
+  min-height: 25rem;
+  max-height: 50rem;
+  padding: 2rem;
+  
+  /* Styling for "user-card" */
+  .user-card {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    
+    width: 90%;
+    height: 15%;
+    
+    /* Styling for "user-profile" */
+    .user-profile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      width: 20%;
+      height: 5rem;
+      
+      font-size: 3rem;
+      
+      border: 1px solid black;
+      border-radius: 50%;
+    }
+    
+    .user-info {
+      width: 50%;
+      height: 100%;
+      
+      /* Styling for "header" */
+      .header {font-size: 1.5rem;}
+      
+      /* Styling for "sub-header" */
+      .sub-header {
+        font-size: 0.8rem;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+/* Styling for "wrapper-add-user */
+.wrapper-add-user {
+  width: 30rem;
+  height: 35rem;
+  padding: 2rem;
+
+  /* Styling for "wrapper-add-user" 'form' */
+  & form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    height: 20rem;
+
+    /* Styling for "text-box" */
+    .text-box {
+      width: 90%;
+      height: 15%;
+      padding: 0.5rem;
+
+      color: black;
+      background-color: transparent;
+      border: 1px solid lightgray;
+    }
+
+    .text-box:focus-within {outline: none;}
+
+    /* Styling for "text-box" "clear-btn" */
+    .clear-btn {
+      background-color: blue;
+    }
+  }
+}
+
+/* Util classes */
+.font-400 {
+  font-family: var(--font-400);
+  font-weight: 400;
+}
+
+.font-500 {
+  font-family: var(--font-400);
+  font-weight: 500;
+}
+
+.font-700 {
+  font-family: var(--font-700);
+  font-weight: 700;
+}

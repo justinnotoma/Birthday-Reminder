@@ -1,12 +1,14 @@
 import { useState } from 'react'
 import './App.css'
+import { WrapperReminder } from './components/WrapperReminder'
+import { WrapperAddUser } from './components/WrapperAddUser'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1>Hello</h1>
+      {/* <WrapperReminder /> */}
+      <WrapperAddUser />
     </>
   )
 }
