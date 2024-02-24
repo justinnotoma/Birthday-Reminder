@@ -1,0 +1,2 @@
+# Birthday Reminder App
+This is a birthday reminder app that is made with react. The orginally idea came from this Youtube video: https://www.youtube.com/watch?v=a_7Z7C_JCyo&t=465s, which was created by FreeCodeCamp.org.
