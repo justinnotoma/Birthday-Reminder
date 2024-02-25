@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-export const WrapperAddUser = () => {
+export const WrapperAddUser = ({hideWrapper}) => {
   return (
     <div className='wrapper-add-user'>
         <h1 className='font-400'>Add birthday</h1>
@@ -11,7 +11,7 @@ export const WrapperAddUser = () => {
             <button type="submit" className='clear-btn'>Add birthday</button>
         </form>
 
-        <button className='clear-btn'>Close</button>
+        <button className='clear-btn' onClick={() => hideWrapper()}>Close</button>
     </div>
   )
 }
