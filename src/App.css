@@ -61,6 +61,12 @@ body {
   min-height: 25rem;
   max-height: 50rem;
   padding: 2rem;
+
+  /* Styling for "wrapper-reminder" 'p' */
+  & p {
+    align-self: center;
+    font-size: 1.2rem;
+  }
   
   /* Styling for "user-card" */
   .user-card {
@@ -92,13 +98,18 @@ body {
       
       /* Styling for "header" */
       .header {font-size: 1.5rem;}
-      
-      /* Styling for "sub-header" */
-      .sub-header {
-        font-size: 0.8rem;
-        opacity: 0.5;
+
+      /* Styling for "user-info" 'p' */
+      & p {
+        font-size: 0.9rem;
       }
     }
+  }
+
+  /* Styling for "sub-header */
+  .sub-header {
+    font-size: 1.3rem;
+    opacity: 0.5;
   }
 }
 

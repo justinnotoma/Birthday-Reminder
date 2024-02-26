@@ -7,7 +7,7 @@ function App() {
   const [reminderState, setReminderState] = useState(true) // When 'reminderState' is set to true, then "WrapperReminder" is shown. When 'reminderState' is set to false, then "WrapperReminder" is hidden
   const [addUserState, setAddUserState] = useState(false) // When 'addUserState' is set to true, then "WrapperAddUser" is shown. When 'addUserState' is set to false, then "WrapperAddUser" is hidden
 
-  const [users, setUser] = useState([{'name': 'Justin', 'age': '17', 'profile': 'J', 'birthday': '2024-02-24', 'isBirthday': false}])
+  const [users, setUser] = useState([])
 
   const hideReminder = () => {
     setReminderState(false)
@@ -35,20 +35,9 @@ function App() {
     let birthYear = dateParts[0]
 
     let age = currentYear - birthYear
-
-    // Check to see if it is the user birthday
-    const currentMonth = ()  => {
-      let currentMonth = currentDate.getMonth()
-      currentMonth = currentMonth + 1
-
-      if(currentMonth < 10) currentMonth = `0${currentMonth}`
-      return currentMonth
-    }
-    const isBirthday = `${dateParts[1]}-${dateParts[2]}` === `${currentMonth()}-${currentDate.getDate()}`
-    console.log(isBirthday)
     
     // Add user to "users" array
-    setUser([...users, {'name': name, 'profile': profile, 'age': age, 'isBirthday': isBirthday}])
+    setUser([...users, {'name': name, 'profile': profile, 'age': age, 'birthday': date}])
     console.log(users)
 
   }
